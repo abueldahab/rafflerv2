@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html ng-app>
+  <head>
+    <title>Raffler</title>
+    <link rel='stylesheet' href='stylesheets/bootstrap.css' />
+    <link rel='stylesheet' href='stylesheets/bootstrap-responsive.css' />
+    <link rel='stylesheet' href='stylesheets/style.css' />
+    <script src="javascripts/angular-1.0.1.min.js"></script>
+    <script src="javascripts/underscore-min.js"></script>
+    <script src="javascripts/jquery-1.8.0.min.js"></script>
+    <script src="javascripts/bootstrap-modal.js"></script>
+    <script src="javascripts/raffler.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="navbar-inner">
+	     <img src="images/raffler.png" alt="Raffler"/>
+      </div>
+    </div>
+    <div class="container-fluid" ng-controller="ChoiceCtrl">
+      <form>
+        <table class="table well">
+          <tr ng-repeat="choice in choices">
+            <td><input type="text" class="input-xlarge" ng-model="choice.text" value={{choice.text}}></td>
+            <td><a href="#" class="btn btn-small btn-primary" ng-click="removeChoice(choice)">Remove</a></td>
+          </tr>
+        </table>
+      </form>
+      <form ng-submit="addChoice()">
+        <table class="table well">
+          <tr>
+            <td><input type="text" class="input-xlarge" ng-model="choiceText" placeholder="Add Choice"></td>
+            <td><input class="btn btn-small btn-info" type="submit" value="Add" ng-disabled="isInvalid()"></td>
+          </tr>
+        </table>
+      </form>
+      <div class="well toolbar">
+        <a href="#" class="btn btn-large" ng-click="choose()">Choose!</a>
+      </div>
+      <div class="modal hide" id="myModal">
+        <div class="modal-body">
+          <p>{{chosen}}</p>
+        </div>
+        <div class="modal-footer">
+          <a href="#" class="btn" data-dismiss="modal">Close</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

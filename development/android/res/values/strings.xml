@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Raffler</string>
+    <string name="uuid">481f3a84e46211e19a4612313d1adcbe</string>
+    <string name="config_hash">608bcc1af904ee5daac89190dd4f2887e624a0cc</string>
+    <string name="trigger_domain">https://trigger.io</string>
+    <string name="payments_publicKey">PAYMENTS_PUBLIC_KEY_HERE</string>
+    <string name="splashimage">src/raffler.png</string>
+    <string name="splashimage_landscape">SPLASH_IMAGE_LANDSCAPE_HERE</string>
+    <string name="facebook_appid" />
+    <string-array name="modules">
+        <item>io.trigger.forge.android.modules.tools</item><item>io.trigger.forge.android.modules.request</item><item>io.trigger.forge.android.modules.reload</item><item>io.trigger.forge.android.modules.prefs</item><item>io.trigger.forge.android.modules.media</item><item>io.trigger.forge.android.modules.file</item><item>io.trigger.forge.android.modules.contact</item><item>io.trigger.forge.android.modules.internal</item>
+        <item>io.trigger.forge.android.modules.logging</item>
+        <item>io.trigger.forge.android.modules.launchimage</item>
+        <item>io.trigger.forge.android.modules.event</item>
+    </string-array>
+</resources>

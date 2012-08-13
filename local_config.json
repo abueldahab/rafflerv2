@@ -1,0 +1,20 @@
+{
+	"general": {
+	},
+	"ios": {
+		"profiles": {
+			"DEFAULT": {
+				"provisioning_profile": ""
+			}
+		}
+	},
+	"android": {
+		"sdk": "/home/rockyj/Apps/android-sdk-linux",
+		"profiles": {
+			"DEFAULT": {
+				"keystore": "rockyj.keystore",
+				"keyalias": "rockyj"
+			}
+		}
+	}
+}

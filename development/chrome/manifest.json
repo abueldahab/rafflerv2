@@ -1,0 +1,8 @@
+{
+	"name": "Raffler",
+	"version": "2.0",
+	"description": "Raffler - You have chosen wisely!",
+	"permissions": ["http://*/*", "https://*/*"],
+	"background": {"page": "forge.html"},
+	"manifest_version": 2
+}

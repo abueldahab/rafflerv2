@@ -1,0 +1,39 @@
+{
+	"config_version": "2",
+	"name": "Raffler",
+	"author": "rocky.jaiswal@gmail.com",
+	"version": "2.0",
+	"platform_version": "v1.4",
+	"description": "Raffler - You have chosen wisely!",
+	"modules": {
+		"logging": {
+			"level": "DEBUG"
+		},
+		"launchimage": {
+				"android": "raffler.png",
+        "android-landscape": "raffler.png"
+			},
+		"package_names": {
+		    "android": "in.rockyj.rafflerv2",
+		    "ios": "in.rockyj.rafflerv2"
+		  },
+		"icons": {
+		  "android": {
+		    "36": "icon36.png",
+		    "48": "icon48.png",
+		    "72": "icon72.png",
+		    "96": "icon96.png"
+		  }
+		},
+		"contact": false,
+		"file": false,
+		"is": false,
+		"media": false,
+		"prefs": false,
+		"request": {
+			"permissions": ["http://*/*", "https://*/*"]
+		},
+		"tools": false,
+		"reload": true
+	}
+}

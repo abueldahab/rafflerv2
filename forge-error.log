@@ -1,0 +1,934 @@
+2012-08-12 16:59:43,154 [   INFO] Forge tools running at version 3.3.9
+2012-08-12 16:59:43,156 [  DEBUG] Forge build tools version: 3.3.9
+2012-08-12 16:59:43,156 [  DEBUG] main: {"server": "https://trigger.io/api/"}
+2012-08-12 16:59:43,164 [  DEBUG] GET https://trigger.io/api/version_check/3/3/9/
+2012-08-12 16:59:45,729 [  DEBUG] Checking API response for success or error
+2012-08-12 16:59:45,729 [   INFO] Update result: you already have the latest tools
+2012-08-12 16:59:45,730 [  DEBUG] GET https://trigger.io/api/auth/loggedin
+2012-08-12 16:59:46,245 [  DEBUG] Checking API response for success or error
+2012-08-12 16:59:46,245 [  DEBUG] already authenticated via cookie - continuing
+2012-08-12 16:59:46,245 [  DEBUG] POST https://trigger.io/api/reload/buildevents/481f3a84e46211e19a4612313d1adcbe
+2012-08-12 16:59:47,160 [  DEBUG] Checking API response for success or error
+2012-08-12 16:59:47,233 [  DEBUG] 'modules' has changed in configuration
+2012-08-12 16:59:47,233 [  DEBUG] already authenticated - continuing
+2012-08-12 16:59:47,233 [  DEBUG] ignoring non-target directory reload
+2012-08-12 16:59:47,233 [  DEBUG] ignoring non-target directory lib
+2012-08-12 16:59:47,234 [  DEBUG] ignoring non-target directory __init__.py
+2012-08-12 16:59:47,234 [  DEBUG] ignoring non-target directory platform_version.txt
+2012-08-12 16:59:47,234 [  DEBUG] ignoring non-target directory config.json
+2012-08-12 16:59:47,234 [  DEBUG] GET https://trigger.io/api/app/481f3a84e46211e19a4612313d1adcbe/should_rebuild
+2012-08-12 16:59:47,648 [  DEBUG] Checking API response for success or error
+2012-08-12 16:59:47,649 [   INFO] Your app configuration has changed: we need to rebuild your app
+2012-08-12 16:59:47,649 [   INFO] Starting new build
+2012-08-12 16:59:47,649 [  DEBUG] already authenticated - continuing
+2012-08-12 16:59:47,649 [  DEBUG] POST https://trigger.io/api/app/481f3a84e46211e19a4612313d1adcbe/template
+2012-08-12 16:59:49,713 [  DEBUG] Checking API response for success or error
+2012-08-12 16:59:49,713 [  ERROR] Something went wrong that we didn't expect:
+2012-08-12 16:59:49,714 [  ERROR] Forge API call to app/481f3a84e46211e19a4612313d1adcbe/template went wrong: Value False for field 'launchimage' is not of type object
+2012-08-12 16:59:49,714 [  DEBUG] Traceback (most recent call last):
+  File "/home/rockyj/Apps/TriggerToolkit/build-tools/forge/async.py", line 96, in run
+    result = self._target(*self._args, **self._kwargs)
+  File "/home/rockyj/Apps/TriggerToolkit/build-tools/forge/main.py", line 341, in development_build
+    build = remote.build(development=True, template_only=True, config=reload_config)
+  File "/home/rockyj/Apps/TriggerToolkit/build-tools/forge/remote.py", line 486, in build
+    build = self._request_development_build(config)
+  File "/home/rockyj/Apps/TriggerToolkit/build-tools/forge/remote.py", line 447, in _request_development_build
+    return self._api_post(url, data=data)
+  File "/home/rockyj/Apps/TriggerToolkit/build-tools/forge/remote.py", line 196, in _api_post
+    _check_api_response_for_error(url, 'POST', resp)
+  File "/home/rockyj/Apps/TriggerToolkit/build-tools/forge/remote.py", line 67, in _check_api_response_for_error
+    raise RequestError(resp, error_message, errors=errors)
+RequestError: Forge API call to app/481f3a84e46211e19a4612313d1adcbe/template went wrong: Value False for field 'launchimage' is not of type object
+
+2012-08-12 16:59:49,714 [  ERROR] See /home/rockyj/Workspace/Projects/rafflerv2/forge-error.log for more details
+2012-08-12 16:59:49,714 [  ERROR] Please contact support@trigger.io
+2012-08-12 17:00:05,910 [   INFO] Forge tools running at version 3.3.9
+2012-08-12 17:00:05,912 [  DEBUG] Forge build tools version: 3.3.9
+2012-08-12 17:00:05,912 [  DEBUG] main: {"server": "https://trigger.io/api/"}
+2012-08-12 17:00:05,923 [  DEBUG] GET https://trigger.io/api/version_check/3/3/9/
+2012-08-12 17:00:08,438 [  DEBUG] Checking API response for success or error
+2012-08-12 17:00:08,439 [   INFO] Update result: you already have the latest tools
+2012-08-12 17:00:08,439 [  DEBUG] GET https://trigger.io/api/auth/loggedin
+2012-08-12 17:00:08,954 [  DEBUG] Checking API response for success or error
+2012-08-12 17:00:08,954 [  DEBUG] already authenticated via cookie - continuing
+2012-08-12 17:00:08,954 [  DEBUG] POST https://trigger.io/api/reload/buildevents/481f3a84e46211e19a4612313d1adcbe
+2012-08-12 17:00:09,569 [  DEBUG] Checking API response for success or error
+2012-08-12 17:00:09,641 [  DEBUG] 'modules' has changed in configuration
+2012-08-12 17:00:09,641 [  DEBUG] already authenticated - continuing
+2012-08-12 17:00:09,641 [  DEBUG] ignoring non-target directory reload
+2012-08-12 17:00:09,641 [  DEBUG] ignoring non-target directory lib
+2012-08-12 17:00:09,641 [  DEBUG] ignoring non-target directory __init__.py
+2012-08-12 17:00:09,641 [  DEBUG] ignoring non-target directory platform_version.txt
+2012-08-12 17:00:09,641 [  DEBUG] ignoring non-target directory config.json
+2012-08-12 17:00:09,641 [  DEBUG] GET https://trigger.io/api/app/481f3a84e46211e19a4612313d1adcbe/should_rebuild
+2012-08-12 17:00:10,206 [  DEBUG] Checking API response for success or error
+2012-08-12 17:00:10,207 [   INFO] Your app configuration has changed: we need to rebuild your app
+2012-08-12 17:00:10,207 [   INFO] Starting new build
+2012-08-12 17:00:10,207 [  DEBUG] already authenticated - continuing
+2012-08-12 17:00:10,207 [  DEBUG] POST https://trigger.io/api/app/481f3a84e46211e19a4612313d1adcbe/template
+2012-08-12 17:00:11,173 [  DEBUG] Checking API response for success or error
+2012-08-12 17:00:11,173 [   INFO] Build 9048 started...
+2012-08-12 17:00:11,173 [   INFO] This could take a while, but will only happen again if you modify config.json
+2012-08-12 17:00:11,173 [  DEBUG] GET https://trigger.io/api/build/9048/detail/
+2012-08-12 17:00:11,738 [  DEBUG] Checking API response for success or error
+2012-08-12 17:00:11,739 [  DEBUG] build 9048 is working...
+2012-08-12 17:00:21,741 [  DEBUG] GET https://trigger.io/api/build/9048/detail/
+2012-08-12 17:00:23,306 [  DEBUG] Checking API response for success or error
+2012-08-12 17:00:23,306 [  DEBUG] build 9048 is working...
+2012-08-12 17:00:33,308 [  DEBUG] GET https://trigger.io/api/build/9048/detail/
+2012-08-12 17:00:34,974 [  DEBUG] Checking API response for success or error
+2012-08-12 17:00:34,974 [  DEBUG] build 9048 is working...
+2012-08-12 17:00:44,976 [  DEBUG] GET https://trigger.io/api/build/9048/detail/
+2012-08-12 17:00:45,941 [  DEBUG] Checking API response for success or error
+2012-08-12 17:00:45,941 [  DEBUG] build 9048 is working...
+2012-08-12 17:00:55,943 [  DEBUG] GET https://trigger.io/api/build/9048/detail/
+2012-08-12 17:00:56,758 [  DEBUG] Checking API response for success or error
+2012-08-12 17:00:56,758 [  DEBUG] build 9048 is working...
+2012-08-12 17:01:06,725 [  DEBUG] GET https://trigger.io/api/build/9048/detail/
+2012-08-12 17:01:07,289 [  DEBUG] Checking API response for success or error
+2012-08-12 17:01:07,289 [   INFO] build completed successfully
+2012-08-12 17:01:07,290 [  DEBUG] 
+
+=================
+
+
+
+=================
+
+
+
+=================
+
+
+2012-08-12 17:01:07,290 [   INFO] Fetching Forge templates for 9048 into "/tmp/forge-templates-_pPPTx/.template"
+2012-08-12 17:01:07,290 [  DEBUG] GET https://trigger.io/api/auth/loggedin
+2012-08-12 17:01:10,005 [  DEBUG] Checking API response for success or error
+2012-08-12 17:01:10,005 [  DEBUG] already authenticated via cookie - continuing
+2012-08-12 17:01:10,005 [  DEBUG] Creating output directory "/tmp/forge-templates-_pPPTx/.template"
+2012-08-12 17:01:10,005 [  DEBUG] writing https://port_customer_code.s3.amazonaws.com:443/ch-2012-08-12-12-31-19/rafflerv2-9048-chrome.zip?Signature=7zDY3hcObzlGjCeA%2FiU8kBBWTPc%3D&Expires=1344774734&AWSAccessKeyId=AKIAJYWQNT53NYOWGRIQ to /tmp/forge-templates-_pPPTx/.template/rafflerv2-9048-chrome.zip
+2012-08-12 17:01:10,005 [  DEBUG] GET https://port_customer_code.s3.amazonaws.com:443/ch-2012-08-12-12-31-19/rafflerv2-9048-chrome.zip?Signature=7zDY3hcObzlGjCeA%2FiU8kBBWTPc%3D&Expires=1344774734&AWSAccessKeyId=AKIAJYWQNT53NYOWGRIQ
+2012-08-12 17:01:22,822 [  DEBUG] removed "chrome" directory
+2012-08-12 17:01:22,822 [  DEBUG] Unzipping rafflerv2-9048-chrome.zip to .
+2012-08-12 17:01:22,822 [  DEBUG] unzip is available, using it
+2012-08-12 17:01:22,822 [  DEBUG] unzip output
+2012-08-12 17:01:22,822 [  DEBUG] Archive:  rafflerv2-9048-chrome.zip
+ extracting: ./chrome/forge.html     
+ extracting: ./chrome/manifest.json  
+   creating: ./chrome/forge/
+ extracting: ./chrome/forge/disable-frames.js  
+ extracting: ./chrome/forge/all.js   
+ extracting: ./chrome/forge/all-priv.js  
+
+2012-08-12 17:01:22,822 [  DEBUG] Extracted unpackaged build for chrome
+2012-08-12 17:01:22,822 [  DEBUG] removed downloaded file "rafflerv2-9048-chrome.zip"
+2012-08-12 17:01:22,822 [  DEBUG] writing https://port_customer_code.s3.amazonaws.com:443/we-2012-08-12-12-31-27/rafflerv2-9048-web.zip?Signature=HWYolBQi2TuR7K6CWu0Mr%2FaD8LE%3D&Expires=1344774734&AWSAccessKeyId=AKIAJYWQNT53NYOWGRIQ to /tmp/forge-templates-_pPPTx/.template/rafflerv2-9048-web.zip
+2012-08-12 17:01:22,822 [  DEBUG] GET https://port_customer_code.s3.amazonaws.com:443/we-2012-08-12-12-31-27/rafflerv2-9048-web.zip?Signature=HWYolBQi2TuR7K6CWu0Mr%2FaD8LE%3D&Expires=1344774734&AWSAccessKeyId=AKIAJYWQNT53NYOWGRIQ
+2012-08-12 17:01:24,822 [  DEBUG] removed "web" directory
+2012-08-12 17:01:24,822 [  DEBUG] Unzipping rafflerv2-9048-web.zip to .
+2012-08-12 17:01:24,822 [  DEBUG] unzip is available, using it
+2012-08-12 17:01:24,822 [  DEBUG] unzip output
+2012-08-12 17:01:24,822 [  DEBUG] Archive:  rafflerv2-9048-web.zip
+ extracting: ./web/cookie.js         
+ extracting: ./web/Procfile          
+ extracting: ./web/.gitignore        
+ extracting: ./web/package.json      
+ extracting: ./web/web.js            
+   creating: ./web/forge/
+ extracting: ./web/forge/disable-frames.js  
+ extracting: ./web/forge/all.js      
+
+2012-08-12 17:01:24,822 [  DEBUG] Extracted unpackaged build for web
+2012-08-12 17:01:24,822 [  DEBUG] removed downloaded file "rafflerv2-9048-web.zip"
+2012-08-12 17:01:24,822 [  DEBUG] writing https://port_customer_code.s3.amazonaws.com:443/an-2012-08-12-12-32-13/rafflerv2-9048-android.zip?Signature=yY589fxl8Kh4iSLwEMvfyS%2F6xRQ%3D&Expires=1344774734&AWSAccessKeyId=AKIAJYWQNT53NYOWGRIQ to /tmp/forge-templates-_pPPTx/.template/rafflerv2-9048-android.zip
+2012-08-12 17:01:24,822 [  DEBUG] GET https://port_customer_code.s3.amazonaws.com:443/an-2012-08-12-12-32-13/rafflerv2-9048-android.zip?Signature=yY589fxl8Kh4iSLwEMvfyS%2F6xRQ%3D&Expires=1344774734&AWSAccessKeyId=AKIAJYWQNT53NYOWGRIQ
+2012-08-12 17:01:36,138 [  DEBUG] removed "android" directory
+2012-08-12 17:01:36,138 [  DEBUG] Unzipping rafflerv2-9048-android.zip to .
+2012-08-12 17:01:36,138 [  DEBUG] unzip is available, using it
+2012-08-12 17:01:36,146 [  DEBUG] unzip output
+2012-08-12 17:01:36,146 [  DEBUG] Archive:  rafflerv2-9048-android.zip
+ extracting: ./android/AndroidManifest.xml  
+   creating: ./android/res/
+   creating: ./android/assets/
+   creating: ./android/output/
+   creating: ./android/res/values/
+   creating: ./android/res/layout/
+   creating: ./android/res/drawable-ldpi/
+   creating: ./android/res/drawable-mdpi/
+   creating: ./android/res/raw/
+   creating: ./android/res/drawable-hdpi/
+   creating: ./android/res/drawable-xhdpi/
+   creating: ./android/res/drawable/
+ extracting: ./android/res/values/styles.xml  
+ extracting: ./android/res/values/strings.xml  
+ extracting: ./android/res/layout/external_webview.xml  
+ extracting: ./android/res/layout/splashscreen.xml  
+ extracting: ./android/res/drawable-ldpi/facebook_icon.png  
+ extracting: ./android/res/drawable-ldpi/icon.png  
+ extracting: ./android/res/drawable-ldpi/close.png  
+ extracting: ./android/res/drawable-mdpi/icon.png  
+ extracting: ./android/res/raw/keystore.bks  
+ extracting: ./android/res/drawable-hdpi/facebook_icon.png  
+ extracting: ./android/res/drawable-hdpi/icon.png  
+ extracting: ./android/res/drawable-hdpi/close.png  
+ extracting: ./android/res/drawable-xhdpi/close.png  
+ extracting: ./android/res/drawable/facebook_icon.png  
+ extracting: ./android/res/drawable/splash.png  
+ extracting: ./android/res/drawable/close.png  
+   creating: ./android/assets/forge/
+ extracting: ./android/assets/forge/disable-frames.js  
+ extracting: ./android/assets/forge/all.js  
+ extracting: ./android/output/classes.dex  
+
+2012-08-12 17:01:36,146 [  DEBUG] Extracted unpackaged build for android
+2012-08-12 17:01:36,146 [  DEBUG] removed downloaded file "rafflerv2-9048-android.zip"
+2012-08-12 17:01:36,146 [  DEBUG] writing https://port_customer_code.s3.amazonaws.com:443/io-2012-08-12-12-30-51/rafflerv2-9048-ios.zip?Signature=3tMFlACt2lCgUlIOnx1oy5k71S8%3D&Expires=1344774734&AWSAccessKeyId=AKIAJYWQNT53NYOWGRIQ to /tmp/forge-templates-_pPPTx/.template/rafflerv2-9048-ios.zip
+2012-08-12 17:01:36,146 [  DEBUG] GET https://port_customer_code.s3.amazonaws.com:443/io-2012-08-12-12-30-51/rafflerv2-9048-ios.zip?Signature=3tMFlACt2lCgUlIOnx1oy5k71S8%3D&Expires=1344774734&AWSAccessKeyId=AKIAJYWQNT53NYOWGRIQ
+2012-08-12 17:02:25,070 [  DEBUG] removed "ios" directory
+2012-08-12 17:02:25,070 [  DEBUG] Unzipping rafflerv2-9048-ios.zip to .
+2012-08-12 17:02:25,070 [  DEBUG] unzip is available, using it
+2012-08-12 17:02:25,086 [  DEBUG] unzip output
+2012-08-12 17:02:25,087 [  DEBUG] Archive:  rafflerv2-9048-ios.zip
+   creating: ./ios/device-ios.app/
+   creating: ./ios/simulator-ios.app/
+ extracting: ./ios/device-ios.app/app_config.json  
+ extracting: ./ios/device-ios.app/Default-Landscape@2x~ipad.png  
+ extracting: ./ios/device-ios.app/Default-Landscape~ipad.png  
+ extracting: ./ios/device-ios.app/Default-Portrait@2x~ipad.png  
+ extracting: ./ios/device-ios.app/Default-Portrait~ipad.png  
+ extracting: ./ios/device-ios.app/Default@2x~iphone.png  
+ extracting: ./ios/device-ios.app/Default~iphone.png  
+ extracting: ./ios/device-ios.app/embedded.mobileprovision  
+ extracting: ./ios/device-ios.app/Forge  
+ extracting: ./ios/device-ios.app/Info.plist  
+ extracting: ./ios/device-ios.app/ipad-retina.png  
+ extracting: ./ios/device-ios.app/ipad.png  
+ extracting: ./ios/device-ios.app/normal.png  
+ extracting: ./ios/device-ios.app/PkgInfo  
+ extracting: ./ios/device-ios.app/ResourceRules.plist  
+ extracting: ./ios/device-ios.app/retina.png  
+ extracting: ./ios/device-ios.app/tabs_modalWebViewController.nib  
+   creating: ./ios/device-ios.app/_CodeSignature/
+   creating: ./ios/device-ios.app/assets/
+   creating: ./ios/device-ios.app/en.lproj/
+   creating: ./ios/device-ios.app/FBDialog.bundle/
+   creating: ./ios/device-ios.app/ForgeCore.bundle/
+ extracting: ./ios/device-ios.app/_CodeSignature/CodeResources  
+   creating: ./ios/device-ios.app/assets/forge/
+ extracting: ./ios/device-ios.app/assets/forge/all.js  
+ extracting: ./ios/device-ios.app/assets/forge/disable-frames.js  
+ extracting: ./ios/device-ios.app/en.lproj/InfoPlist.strings  
+   creating: ./ios/device-ios.app/FBDialog.bundle/images/
+ extracting: ./ios/device-ios.app/FBDialog.bundle/images/close.png  
+ extracting: ./ios/device-ios.app/FBDialog.bundle/images/close@2x.png  
+ extracting: ./ios/device-ios.app/FBDialog.bundle/images/fbicon.png  
+ extracting: ./ios/device-ios.app/ForgeCore.bundle/templateappViewController.nib  
+ extracting: ./ios/simulator-ios.app/app_config.json  
+ extracting: ./ios/simulator-ios.app/Default-Landscape@2x~ipad.png  
+ extracting: ./ios/simulator-ios.app/Default-Landscape~ipad.png  
+ extracting: ./ios/simulator-ios.app/Default-Portrait@2x~ipad.png  
+ extracting: ./ios/simulator-ios.app/Default-Portrait~ipad.png  
+ extracting: ./ios/simulator-ios.app/Default@2x~iphone.png  
+ extracting: ./ios/simulator-ios.app/Default~iphone.png  
+ extracting: ./ios/simulator-ios.app/Forge  
+ extracting: ./ios/simulator-ios.app/Info.plist  
+ extracting: ./ios/simulator-ios.app/ipad-retina.png  
+ extracting: ./ios/simulator-ios.app/ipad.png  
+ extracting: ./ios/simulator-ios.app/normal.png  
+ extracting: ./ios/simulator-ios.app/PkgInfo  
+ extracting: ./ios/simulator-ios.app/retina.png  
+ extracting: ./ios/simulator-ios.app/tabs_modalWebViewController.nib  
+   creating: ./ios/simulator-ios.app/assets/
+   creating: ./ios/simulator-ios.app/en.lproj/
+   creating: ./ios/simulator-ios.app/FBDialog.bundle/
+   creating: ./ios/simulator-ios.app/ForgeCore.bundle/
+   creating: ./ios/simulator-ios.app/assets/forge/
+ extracting: ./ios/simulator-ios.app/assets/forge/all.js  
+ extracting: ./ios/simulator-ios.app/assets/forge/disable-frames.js  
+ extracting: ./ios/simulator-ios.app/en.lproj/InfoPlist.strings  
+   creating: ./ios/simulator-ios.app/FBDialog.bundle/images/
+ extracting: ./ios/simulator-ios.app/FBDialog.bundle/images/close.png  
+ extracting: ./ios/simulator-ios.app/FBDialog.bundle/images/close@2x.png  
+ extracting: ./ios/simulator-ios.app/FBDialog.bundle/images/fbicon.png  
+ extracting: ./ios/simulator-ios.app/ForgeCore.bundle/templateappViewController.nib  
+
+2012-08-12 17:02:25,087 [  DEBUG] Extracted unpackaged build for ios
+2012-08-12 17:02:25,088 [  DEBUG] removed downloaded file "rafflerv2-9048-ios.zip"
+2012-08-12 17:02:25,089 [  DEBUG] Fetched build into "/tmp/forge-templates-_pPPTx/.template/chrome", "/tmp/forge-templates-_pPPTx/.template/web", "/tmp/forge-templates-_pPPTx/.template/android", "/tmp/forge-templates-_pPPTx/.template/ios"
+2012-08-12 17:02:25,089 [  DEBUG] already authenticated - continuing
+2012-08-12 17:02:25,089 [   INFO] Fetching generation instructions for v1.4 into "/tmp/forge-templates-_pPPTx/.template"
+2012-08-12 17:02:25,091 [  DEBUG] GET https://trigger.io/api/platform/v1.4/generate_instructions/
+2012-08-12 17:02:45,560 [  DEBUG] Unzipping instructions.zip to .
+2012-08-12 17:02:45,560 [  DEBUG] unzip is available, using it
+2012-08-12 17:02:45,560 [  DEBUG] unzip output
+2012-08-12 17:02:45,560 [  DEBUG] Archive:  instructions.zip
+  inflating: ./generate_dynamic/__init__.py  
+  inflating: ./generate_dynamic/android_tasks.py  
+  inflating: ./generate_dynamic/build.py  
+  inflating: ./generate_dynamic/check_tasks.py  
+  inflating: ./generate_dynamic/customer_goals.py  
+  inflating: ./generate_dynamic/customer_phases.py  
+  inflating: ./generate_dynamic/customer_tasks.py  
+  inflating: ./generate_dynamic/firefox_tasks.py  
+  inflating: ./generate_dynamic/ie_tasks.py  
+  inflating: ./generate_dynamic/internal_goals.py  
+  inflating: ./generate_dynamic/internal_tasks.py  
+  inflating: ./generate_dynamic/ios_tasks.py  
+  inflating: ./generate_dynamic/lib.py  
+  inflating: ./generate_dynamic/migrate_tasks.py  
+  inflating: ./generate_dynamic/predicates.py  
+  inflating: ./generate_dynamic/safari_tasks.py  
+  inflating: ./generate_dynamic/utils.py  
+  inflating: ./generate_dynamic/web_tasks.py  
+  inflating: ./generate_dynamic/wp_tasks.py  
+  inflating: ./generate_dynamic/chrome_tasks.py  
+  inflating: ./generate_dynamic/modules/__init__.py  
+  inflating: ./generate_dynamic/modules/icons.py  
+  inflating: ./generate_dynamic/modules/launchimage.py  
+  inflating: ./generate_dynamic/modules/activations.py  
+  inflating: ./generate_dynamic/chrome_tasks.py  
+  inflating: ./generate_dynamic/reload.py  
+  inflating: ./lib/apk-signer.jar    
+  inflating: ./lib/debug.keystore    
+  inflating: ./lib/template.entitlements  
+  inflating: ./lib/ios-sim-xc4.2     
+  inflating: ./lib/ios-sim-xc4.3     
+  inflating: ./lib/fruitstrap        
+  inflating: ./lib/android-platform.apk  
+  inflating: ./lib/validictory/__init__.py  
+  inflating: ./lib/validictory/validator.py  
+  inflating: ./lib/local_config_schema.json  
+  inflating: ./lib/schema.json       
+  inflating: ./lib/changeset.txt     
+  inflating: ./lib/invalidating_config.json  
+  inflating: ./lib/poster/__init__.py  
+  inflating: ./lib/poster/encode.py  
+  inflating: ./lib/poster/streaminghttp.py  
+  inflating: ./lib/hash.json         
+  inflating: ./__init__.py           
+  inflating: ./platform_version.txt  
+
+2012-08-12 17:02:45,561 [   INFO] Removing old templates if present
+2012-08-12 17:02:45,561 [  DEBUG] Removing .template 
+2012-08-12 17:02:45,577 [   INFO] Using new templates
+2012-08-12 17:02:45,577 [  DEBUG] Moving /tmp/forge-templates-_pPPTx/.template to .template
+2012-08-12 17:02:45,670 [  DEBUG] ignoring non-target directory lib
+2012-08-12 17:02:45,670 [  DEBUG] ignoring non-target directory __init__.py
+2012-08-12 17:02:45,670 [  DEBUG] ignoring non-target directory platform_version.txt
+2012-08-12 17:02:45,670 [  DEBUG] ignoring non-target directory config.json
+2012-08-12 17:02:45,674 [  DEBUG] Enabled platforms: ['web', 'android', 'chrome', 'ios']
+2012-08-12 17:02:45,691 [  DEBUG] Forge build tools version: 3.3.9
+2012-08-12 17:02:45,691 [  DEBUG] main: {"server": "https://trigger.io/api/"}
+2012-08-12 17:02:45,691 [  DEBUG] GET https://trigger.io/api/auth/loggedin
+2012-08-12 17:02:48,407 [  DEBUG] Checking API response for success or error
+2012-08-12 17:02:48,407 [  DEBUG] already authenticated via cookie - continuing
+2012-08-12 17:02:48,407 [  DEBUG] POST https://trigger.io/api/track/
+2012-08-12 17:02:49,022 [  DEBUG] Checking API response for success or error
+2012-08-12 17:02:49,023 [  DEBUG] <ForgeTask (web, android, chrome, ios)> running...
+2012-08-12 17:02:49,023 [  DEBUG] <ForgeTask (web, android, chrome, ios)> script:
+[{'do': {'lint_javascript': ()}},
+ {'do': {'check_local_config_schema': ()}},
+ {'do': {'resolve_urls': ('modules.activations.[].scripts.[]',
+                          'modules.activations.[].styles.[]',
+                          'modules.icons.*',
+                          'modules.launchimage.*',
+                          'modules.button.default_icon',
+                          'modules.button.default_popup',
+                          'modules.button.default_icons.*')}},
+ {'do': {'copy_files': {'from': 'src',
+                        'ignore_patterns': [u'.svn/',
+                                            u'.cvs/',
+                                            u'.hg/',
+                                            u'./identity.json',
+                                            u'.git/',
+                                            u'.bzr/',
+                                            u'.forgeignore',
+                                            u'./config.json',
+                                            u'.darcs/'],
+                        'to': 'development/android/assets/src'}},
+  'when': {'platform_is': 'android'}},
+ {'do': {'copy_files': {'from': 'src',
+                        'ignore_patterns': [u'.svn/',
+                                            u'.cvs/',
+                                            u'.hg/',
+                                            u'./identity.json',
+                                            u'.git/',
+                                            u'.bzr/',
+                                            u'.forgeignore',
+                                            u'./config.json',
+                                            u'.darcs/'],
+                        'to': 'development/ios/*/assets/src'}},
+  'when': {'platform_is': 'ios'}},
+ {'do': {'copy_files': {'from': 'src',
+                        'ignore_patterns': [u'.svn/',
+                                            u'.cvs/',
+                                            u'.hg/',
+                                            u'./identity.json',
+                                            u'.git/',
+                                            u'.bzr/',
+                                            u'.forgeignore',
+                                            u'./config.json',
+                                            u'.darcs/'],
+                        'to': 'development/chrome/src'}},
+  'when': {'platform_is': 'chrome'}},
+ {'do': {'copy_files': {'from': 'src',
+                        'ignore_patterns': [u'.svn/',
+                                            u'.cvs/',
+                                            u'.hg/',
+                                            u'./identity.json',
+                                            u'.git/',
+                                            u'.bzr/',
+                                            u'.forgeignore',
+                                            u'./config.json',
+                                            u'.darcs/'],
+                        'to': 'development/web/src'}},
+  'when': {'platform_is': 'web'}},
+ {'do': {'copy_files': {'from': 'src',
+                        'ignore_patterns': [u'.svn/',
+                                            u'.cvs/',
+                                            u'.hg/',
+                                            u'./identity.json',
+                                            u'.git/',
+                                            u'.bzr/',
+                                            u'.forgeignore',
+                                            u'./config.json',
+                                            u'.darcs/'],
+                        'to': 'development/reload/src'}}},
+ {'do': {'find_and_replace_in_dir': {'find': '<head>',
+                                     'replace': "<head><script src='/forge/all.js'></script>",
+                                     'root_dir': 'development/android/assets/src'}},
+  'when': {'platform_is': 'android'}},
+ {'do': {'find_and_replace_in_dir': {'find': '<head>',
+                                     'replace': "<head><script src='%{back_to_parent}%forge/all.js'></script>",
+                                     'root_dir': 'development/ios/*/assets/src'}},
+  'when': {'platform_is': 'ios'}},
+ {'do': {'find_and_replace_in_dir': {'find': '<head>',
+                                     'replace': "<head><script src='/forge/all.js'></script>",
+                                     'root_dir': 'development/chrome/src'}},
+  'when': {'platform_is': 'chrome'}},
+ {'do': {'find_and_replace_in_dir': {'find': '<head>',
+                                     'replace': "<head><script src='/_forge/all.js'></script>",
+                                     'root_dir': 'development/web/src'}},
+  'when': {'platform_is': 'web'}},
+ {'do': {'find_and_replace_in_dir': {'find': '<head>',
+                                     'replace': "<head><script src='%{back_to_parent}%forge/all.js'></script>",
+                                     'root_dir': 'development/reload/src'}}},
+ {'do': {'find_and_replace_in_dir': {'find': '<head>',
+                                     'replace': '<head>\n\t\t\t\t<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">\n\t\t\t\t<script>\n\t\t\t\tfunction window$forge$_receive(result) {\n\t\t\t\t\ttry {\n\t\t\t\t\t\twindow.forge._receive(JSON.parse(result));\n\t\t\t\t\t} catch (e) {\n\t\t\t\t\t\tforge.logging.error("window$forge$_receive -> " + e);\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t</script>',
+                                     'root_dir': 'development/reload/src'}}},
+ {'do': {'populate_xml_safe_name': ()}},
+ {'do': {'populate_json_safe_name': ()}},
+ {'do': {'set_element_value_xml': {'element': "string/[@name='app_name']",
+                                   'file': 'development/android/res/values/strings.xml',
+                                   'value': '${xml_safe_name}'}},
+  'when': {'platform_is': 'android'}},
+ {'do': {'set_in_biplist': {'filename': 'development/ios/*/Info.plist',
+                            'key': 'CFBundleName',
+                            'value': '${name}'}},
+  'when': {'platform_is': 'ios'}},
+ {'do': {'set_in_biplist': {'filename': 'development/ios/*/Info.plist',
+                            'key': 'CFBundleDisplayName',
+                            'value': '${name}'}},
+  'when': {'platform_is': 'ios'}},
+ {'do': {'find_and_replace': {'find': 'APP_NAME_HERE',
+                              'in': ('development/chrome/manifest.json',),
+                              'replace': '${json_safe_name}'}},
+  'when': {'platform_is': 'chrome'}},
+ {'do': {'populate_package_names': ()}},
+ {'do': {'find_and_replace': {'find': 'io.trigger.forge.android.template',
+                              'in': ('development/android/AndroidManifest.xml',),
+                              'replace': '${modules.package_names.android}'}},
+  'when': {'platform_is': 'android'}},
+ {'do': {'find_and_replace': {'find': 'UUID_HERE',
+                              'in': ('development/android/res/values/strings.xml',),
+                              'replace': '${uuid}'}},
+  'when': {'platform_is': 'android'}},
+ {'do': {'set_in_biplist': {'filename': 'development/ios/*/Info.plist',
+                            'key': 'CFBundleIdentifier',
+                            'value': '${modules.package_names.ios}'}},
+  'when': {'platform_is': 'ios'}},
+ {'do': {'find_and_replace': {'find': 'UUID_HERE',
+                              'in': ('development/ios/*/app_config.json',),
+                              'replace': '${uuid}'}},
+  'when': {'platform_is': 'ios'}},
+ {'do': {'find_and_replace': {'find': 'DESCRIPTION_HERE',
+                              'in': ('development/chrome/manifest.json',),
+                              'replace': '${description}'}},
+  'when': {'platform_is': 'chrome'}},
+ {'do': {'find_and_replace': {'find': 'VERSION_HERE',
+                              'in': ('development/chrome/manifest.json',),
+                              'replace': '${version}'}},
+  'when': {'platform_is': 'chrome'}},
+ {'do': {'set_attribute_value_xml': {'attribute': 'android:versionCode',
+                                     'file': 'development/android/AndroidManifest.xml',
+                                     'value': '1344771165'}},
+  'when': {'platform_is': 'android'}},
+ {'do': {'set_attribute_value_xml': {'attribute': 'android:versionName',
+                                     'file': 'development/android/AndroidManifest.xml',
+                                     'value': '${version}'}},
+  'when': {'platform_is': 'android'}},
+ {'do': {'set_in_biplist': {'filename': 'development/ios/*/Info.plist',
+                            'key': 'CFBundleVersion',
+                            'value': '1344771165'}},
+  'when': {'platform_is': 'ios'}},
+ {'do': {'set_in_biplist': {'filename': 'development/ios/*/Info.plist',
+                            'key': 'CFBundleShortVersionString',
+                            'value': '${version}'}},
+  'when': {'platform_is': 'ios'}},
+ {'do': {'populate_trigger_domain': ()}},
+ {'do': {'find_and_replace': {'find': 'CONFIG_HASH_HERE',
+                              'in': ('development/android/res/values/strings.xml',),
+                              'replace': '${config_hash}'}},
+  'when': {'platform_is': 'android'}},
+ {'do': {'find_and_replace': {'find': 'TRIGGER_DOMAIN_HERE',
+                              'in': ('development/android/res/values/strings.xml',),
+                              'replace': '${trigger_domain}'}},
+  'when': {'platform_is': 'android'}},
+ {'do': {'find_and_replace': {'find': 'CONFIG_HASH_HERE',
+                              'in': ('development/ios/*/app_config.json',),
+                              'replace': '${config_hash}'}},
+  'when': {'platform_is': 'ios'}},
+ {'do': {'find_and_replace': {'find': 'TRIGGER_DOMAIN_HERE',
+                              'in': ('development/ios/*/app_config.json',),
+                              'replace': '${trigger_domain}'}},
+  'when': {'platform_is': 'ios'}},
+ {'do': {'populate_icons': ('android', [36, 48, 72])},
+  'when': {'platform_is': 'android'}},
+ {'do': {'populate_icons': ('chrome', [16, 48, 128])},
+  'when': {'platform_is': 'chrome'}},
+ {'do': {'populate_icons': ('ios', [57, 72, 114, 144])},
+  'when': {'platform_is': 'ios'}},
+ {'do': {'copy_files': {'from': '${modules["icons"]["android"]["36"]}',
+                        'to': 'development/android/res/drawable-ldpi/icon.png'}},
+  'when': {'icon_available': ('android', '36'), 'platform_is': 'android'}},
+ {'do': {'copy_files': {'from': '${modules["icons"]["android"]["48"]}',
+                        'to': 'development/android/res/drawable-mdpi/icon.png'}},
+  'when': {'icon_available': ('android', '48'), 'platform_is': 'android'}},
+ {'do': {'copy_files': {'from': '${modules["icons"]["android"]["72"]}',
+                        'to': 'development/android/res/drawable-hdpi/icon.png'}},
+  'when': {'icon_available': ('android', '72'), 'platform_is': 'android'}}]
+2012-08-12 17:02:49,023 [   INFO] Checking JavaScript files...
+2012-08-12 17:02:49,023 [  DEBUG] Running: '/home/rockyj/Apps/TriggerToolkit/build-tools/bin/jsl-64' '-conf' '/home/rockyj/Apps/TriggerToolkit/build-tools/jsl.conf' '-process' '/home/rockyj/Workspace/Projects/rafflerv2/src/*.js' '-nologo' '-nofilelisting' '-nosummary'
+2012-08-12 17:02:49,137 [   INFO] JavaScript check complete
+2012-08-12 17:02:49,137 [   INFO] Verifying your configuration settings...
+2012-08-12 17:02:49,138 [   INFO] Configuration settings check complete
+2012-08-12 17:02:49,138 [  DEBUG] copying src to development/android/assets/src
+2012-08-12 17:02:49,138 [  DEBUG] copying src to development/ios/device-ios.app/assets/src
+2012-08-12 17:02:49,138 [  DEBUG] copying src to development/ios/simulator-ios.app/assets/src
+2012-08-12 17:02:49,138 [  DEBUG] copying src to development/chrome/src
+2012-08-12 17:02:49,138 [  DEBUG] copying src to development/web/src
+2012-08-12 17:02:49,139 [  DEBUG] copying src to development/reload/src
+2012-08-12 17:02:49,139 [  DEBUG] replacing <head> with <head><script src='/forge/all.js'></script> in development/android/assets/src/**/*.('html',)
+2012-08-12 17:02:49,141 [  DEBUG] replacing <head> with <head><script src='/forge/all.js'></script> in development/android/assets/src/index.html
+2012-08-12 17:02:49,142 [  DEBUG] replacing <head> with <head><script src='%{back_to_parent}%forge/all.js'></script> in development/ios/*/assets/src/**/*.('html',)
+2012-08-12 17:02:49,142 [  DEBUG] replacing <head> with <head><script src='../forge/all.js'></script> in development/ios/device-ios.app/assets/src/index.html
+2012-08-12 17:02:49,142 [  DEBUG] replacing <head> with <head><script src='../forge/all.js'></script> in development/ios/simulator-ios.app/assets/src/index.html
+2012-08-12 17:02:49,142 [  DEBUG] replacing <head> with <head><script src='/forge/all.js'></script> in development/chrome/src/**/*.('html',)
+2012-08-12 17:02:49,144 [  DEBUG] replacing <head> with <head><script src='/forge/all.js'></script> in development/chrome/src/index.html
+2012-08-12 17:02:49,144 [  DEBUG] replacing <head> with <head><script src='/_forge/all.js'></script> in development/web/src/**/*.('html',)
+2012-08-12 17:02:49,144 [  DEBUG] replacing <head> with <head><script src='/_forge/all.js'></script> in development/web/src/index.html
+2012-08-12 17:02:49,144 [  DEBUG] replacing <head> with <head><script src='%{back_to_parent}%forge/all.js'></script> in development/reload/src/**/*.('html',)
+2012-08-12 17:02:49,144 [  DEBUG] replacing <head> with <head><script src='../forge/all.js'></script> in development/reload/src/index.html
+2012-08-12 17:02:49,145 [  DEBUG] replacing <head> with <head>
+				<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+				<script>
+				function window$forge$_receive(result) {
+					try {
+						window.forge._receive(JSON.parse(result));
+					} catch (e) {
+						forge.logging.error("window$forge$_receive -> " + e);
+					}
+				}
+			</script> in development/reload/src/**/*.('html',)
+2012-08-12 17:02:49,145 [  DEBUG] replacing <head> with <head>
+				<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+				<script>
+				function window$forge$_receive(result) {
+					try {
+						window.forge._receive(JSON.parse(result));
+					} catch (e) {
+						forge.logging.error("window$forge$_receive -> " + e);
+					}
+				}
+			</script> in development/reload/src/index.html
+2012-08-12 17:02:49,145 [  DEBUG] setting CFBundleName to rafflerv2 in development/ios/*/Info.plist
+2012-08-12 17:02:49,155 [  DEBUG] setting CFBundleDisplayName to rafflerv2 in development/ios/*/Info.plist
+2012-08-12 17:02:49,164 [  DEBUG] replacing APP_NAME_HERE with 'rafflerv2'
+2012-08-12 17:02:49,164 [  DEBUG] replacing APP_NAME_HERE with rafflerv2 in development/chrome/manifest.json
+2012-08-12 17:02:49,165 [  DEBUG] replacing io.trigger.forge.android.template with 'in.rockyj.raffler'
+2012-08-12 17:02:49,165 [  DEBUG] replacing io.trigger.forge.android.template with in.rockyj.raffler in development/android/AndroidManifest.xml
+2012-08-12 17:02:49,165 [  DEBUG] replacing UUID_HERE with '481f3a84e46211e19a4612313d1adcbe'
+2012-08-12 17:02:49,165 [  DEBUG] replacing UUID_HERE with 481f3a84e46211e19a4612313d1adcbe in development/android/res/values/strings.xml
+2012-08-12 17:02:49,165 [  DEBUG] setting CFBundleIdentifier to in.rockyj.raffler in development/ios/*/Info.plist
+2012-08-12 17:02:49,172 [  DEBUG] replacing UUID_HERE with '481f3a84e46211e19a4612313d1adcbe'
+2012-08-12 17:02:49,173 [  DEBUG] replacing UUID_HERE with 481f3a84e46211e19a4612313d1adcbe in development/ios/device-ios.app/app_config.json
+2012-08-12 17:02:49,173 [  DEBUG] replacing UUID_HERE with 481f3a84e46211e19a4612313d1adcbe in development/ios/simulator-ios.app/app_config.json
+2012-08-12 17:02:49,173 [  DEBUG] replacing DESCRIPTION_HERE with 'Raffler - You have choosen wisely!'
+2012-08-12 17:02:49,173 [  DEBUG] replacing DESCRIPTION_HERE with Raffler - You have choosen wisely! in development/chrome/manifest.json
+2012-08-12 17:02:49,175 [  DEBUG] replacing VERSION_HERE with '2.0'
+2012-08-12 17:02:49,175 [  DEBUG] replacing VERSION_HERE with 2.0 in development/chrome/manifest.json
+2012-08-12 17:02:49,183 [  DEBUG] setting CFBundleVersion to 1344771165 in development/ios/*/Info.plist
+2012-08-12 17:02:49,185 [  DEBUG] setting CFBundleShortVersionString to 2.0 in development/ios/*/Info.plist
+2012-08-12 17:02:49,198 [  DEBUG] Forge build tools version: 3.3.9
+2012-08-12 17:02:49,199 [  DEBUG] main: {"server": "https://trigger.io/api/"}
+2012-08-12 17:02:49,199 [  DEBUG] replacing CONFIG_HASH_HERE with 'ab63c87e620fdaf864367bcbe80e6104ac6a6237'
+2012-08-12 17:02:49,199 [  DEBUG] replacing CONFIG_HASH_HERE with ab63c87e620fdaf864367bcbe80e6104ac6a6237 in development/android/res/values/strings.xml
+2012-08-12 17:02:49,199 [  DEBUG] replacing TRIGGER_DOMAIN_HERE with 'https://trigger.io'
+2012-08-12 17:02:49,199 [  DEBUG] replacing TRIGGER_DOMAIN_HERE with https://trigger.io in development/android/res/values/strings.xml
+2012-08-12 17:02:49,200 [  DEBUG] replacing CONFIG_HASH_HERE with 'ab63c87e620fdaf864367bcbe80e6104ac6a6237'
+2012-08-12 17:02:49,200 [  DEBUG] replacing CONFIG_HASH_HERE with ab63c87e620fdaf864367bcbe80e6104ac6a6237 in development/ios/device-ios.app/app_config.json
+2012-08-12 17:02:49,202 [  DEBUG] replacing CONFIG_HASH_HERE with ab63c87e620fdaf864367bcbe80e6104ac6a6237 in development/ios/simulator-ios.app/app_config.json
+2012-08-12 17:02:49,202 [  DEBUG] replacing TRIGGER_DOMAIN_HERE with 'https://trigger.io'
+2012-08-12 17:02:49,203 [  DEBUG] replacing TRIGGER_DOMAIN_HERE with https://trigger.io in development/ios/device-ios.app/app_config.json
+2012-08-12 17:02:49,204 [  DEBUG] replacing TRIGGER_DOMAIN_HERE with https://trigger.io in development/ios/simulator-ios.app/app_config.json
+2012-08-12 17:02:49,204 [WARNING] missing icon "16" for platform "chrome"
+2012-08-12 17:02:49,205 [WARNING] missing icon "48" for platform "chrome"
+2012-08-12 17:02:49,206 [WARNING] missing icon "128" for platform "chrome"
+2012-08-12 17:02:49,206 [WARNING] missing icon "57" for platform "ios"
+2012-08-12 17:02:49,206 [WARNING] missing icon "72" for platform "ios"
+2012-08-12 17:02:49,206 [WARNING] missing icon "114" for platform "ios"
+2012-08-12 17:02:49,207 [WARNING] missing icon "144" for platform "ios"
+2012-08-12 17:02:49,207 [  DEBUG] copying src/icon36.png to development/android/res/drawable-ldpi/icon.png
+2012-08-12 17:02:49,210 [  ERROR] Something went wrong that we didn't expect:
+2012-08-12 17:02:49,211 [  ERROR] [Errno 2] No such file or directory: 'src/icon36.png'
+2012-08-12 17:02:49,211 [  DEBUG] Traceback (most recent call last):
+  File "/home/rockyj/Apps/TriggerToolkit/build-tools/forge/async.py", line 96, in run
+    result = self._target(*self._args, **self._kwargs)
+  File "/home/rockyj/Apps/TriggerToolkit/build-tools/forge/main.py", line 377, in development_build
+    generator.all('development', defaults.SRC_DIR, extra_args=unhandled_args, config=reload_config_for_local)
+  File "/home/rockyj/Apps/TriggerToolkit/build-tools/forge/generate.py", line 47, in all
+    build_to_run=build_to_run,
+  File "/home/rockyj/Workspace/Projects/rafflerv2/.template/generate_dynamic/customer_goals.py", line 65, in generate_app_from_template
+    build_to_run.run()
+  File "/home/rockyj/Workspace/Projects/rafflerv2/.template/generate_dynamic/build.py", line 333, in run
+    self._call_with_params(task_method, task_args)
+  File "/home/rockyj/Workspace/Projects/rafflerv2/.template/generate_dynamic/build.py", line 294, in _call_with_params
+    return method(self, **params)
+  File "/home/rockyj/Workspace/Projects/rafflerv2/.template/generate_dynamic/customer_tasks.py", line 108, in copy_files
+    return _rename_or_copy_files(build, kw['from'], kw['to'], rename=False, ignore_patterns=kw.get('ignore_patterns'))
+  File "/home/rockyj/Workspace/Projects/rafflerv2/.template/generate_dynamic/lib.py", line 38, in wrapper
+    return function(*args, **kw)
+  File "/home/rockyj/Workspace/Projects/rafflerv2/.template/generate_dynamic/customer_tasks.py", line 175, in _rename_or_copy_files
+    shutil.copy(from_, found_to)
+  File "/usr/lib64/python2.7/shutil.py", line 117, in copy
+    copyfile(src, dst)
+  File "/usr/lib64/python2.7/shutil.py", line 82, in copyfile
+    with open(src, 'rb') as fsrc:
+IOError: [Errno 2] No such file or directory: 'src/icon36.png'
+
+2012-08-12 17:02:49,211 [  ERROR] See /home/rockyj/Workspace/Projects/rafflerv2/forge-error.log for more details
+2012-08-12 17:02:49,211 [  ERROR] Please contact support@trigger.io
+2012-08-12 22:31:53,766 [   INFO] Forge tools running at version 3.3.9
+2012-08-12 22:31:53,899 [  DEBUG] ignoring non-target directory reload
+2012-08-12 22:31:53,899 [  DEBUG] ignoring non-target directory lib
+2012-08-12 22:31:53,899 [  DEBUG] ignoring non-target directory __init__.py
+2012-08-12 22:31:53,899 [  DEBUG] ignoring non-target directory platform_version.txt
+2012-08-12 22:31:53,899 [  DEBUG] ignoring non-target directory config.json
+2012-08-12 22:31:53,899 [  DEBUG] Enabled platforms: ['android']
+2012-08-12 22:31:53,899 [  DEBUG] Forge build tools version: 3.3.9
+2012-08-12 22:31:53,899 [  DEBUG] main: {"server": "https://trigger.io/api/"}
+2012-08-12 22:31:53,899 [  DEBUG] GET https://trigger.io/api/auth/loggedin
+2012-08-12 22:31:56,315 [  DEBUG] Checking API response for success or error
+2012-08-12 22:31:56,316 [  DEBUG] already authenticated via cookie - continuing
+2012-08-12 22:31:56,316 [  DEBUG] POST https://trigger.io/api/track/
+2012-08-12 22:31:56,831 [  DEBUG] Checking API response for success or error
+2012-08-12 22:31:56,831 [  DEBUG] <ForgeTask (android)> running...
+2012-08-12 22:31:56,831 [  DEBUG] <ForgeTask (android)> script:
+[{'do': {'lint_javascript': ()}},
+ {'do': {'check_local_config_schema': ()}},
+ {'do': {'package_android': ()}, 'when': {'platform_is': 'android'}}]
+2012-08-12 22:31:56,831 [   INFO] Checking JavaScript files...
+2012-08-12 22:31:56,832 [  DEBUG] Running: '/home/rockyj/Apps/TriggerToolkit/build-tools/bin/jsl-64' '-conf' '/home/rockyj/Apps/TriggerToolkit/build-tools/jsl.conf' '-process' '/home/rockyj/Workspace/Projects/rafflerv2/src/*.js' '-nologo' '-nofilelisting' '-nosummary'
+2012-08-12 22:31:56,895 [   INFO] JavaScript check complete
+2012-08-12 22:31:56,895 [   INFO] Verifying your configuration settings...
+2012-08-12 22:31:56,895 [   INFO] Configuration settings check complete
+2012-08-12 22:31:56,895 [  DEBUG] Checking to see if java is already in the PATH
+2012-08-12 22:31:56,896 [  DEBUG] Running: 'java' '-version'
+2012-08-12 22:31:56,959 [  DEBUG] Can run java directly from PATH
+2012-08-12 22:31:56,959 [  DEBUG] Using configuration file value u'/home/rockyj/Apps/android-sdk-linux' for android.sdk
+2012-08-12 22:31:56,959 [  DEBUG] Using configuration file value u'rockyj.keystore' for android.profile.keystore
+2012-08-12 22:31:56,960 [  DEBUG] Using configuration file value u'rockyj' for android.profile.keyalias
+2012-08-12 22:32:17,418 [   INFO] Creating Android .apk file
+2012-08-12 22:32:17,418 [   INFO] Creating APK with aapt
+2012-08-12 22:32:17,418 [  DEBUG] Running: '/home/rockyj/Apps/android-sdk-linux/platform-tools/aapt' 'p' '-F' '/tmp/tmpzyh_te' '-S' 'development/android/res' '-M' 'development/android/AndroidManifest.xml' '-I' '.template/lib/android-platform.apk' '-A' 'development/android/assets' '-0' '' '--rename-manifest-package' 'in.rockyj.raffler' '-f' 'development/android/output'
+2012-08-12 22:32:17,532 [   INFO] Signing APK with your release key
+2012-08-12 22:32:17,533 [  DEBUG] Running: 'java' '-jar' '.template/lib/apk-signer.jar' '--keystore' '/home/rockyj/Workspace/Projects/rafflerv2/rockyj.keystore' '--storepass' 'keystore' '--keyalias' 'rockyj' '--keypass' '#4Secure' '--out' '/tmp/tmpN99oNx' '/tmp/tmpzyh_te'
+2012-08-12 22:32:17,596 [  DEBUG] Keystore file not found.
+2012-08-12 22:32:17,598 [  ERROR] Something went wrong that we didn't expect:
+2012-08-12 22:32:17,599 [  ERROR] Failed when running java: Keystore file not found.
+
+2012-08-12 22:32:17,599 [  DEBUG] Traceback (most recent call last):
+  File "/home/rockyj/Apps/TriggerToolkit/build-tools/forge/async.py", line 96, in run
+    result = self._target(*self._args, **self._kwargs)
+  File "/home/rockyj/Apps/TriggerToolkit/build-tools/forge/main.py", line 413, in package
+    build_to_run=build_to_run,
+  File "/home/rockyj/Workspace/Projects/rafflerv2/.template/generate_dynamic/customer_goals.py", line 134, in package_app
+    build_to_run.run()
+  File "/home/rockyj/Workspace/Projects/rafflerv2/.template/generate_dynamic/build.py", line 333, in run
+    self._call_with_params(task_method, task_args)
+  File "/home/rockyj/Workspace/Projects/rafflerv2/.template/generate_dynamic/build.py", line 296, in _call_with_params
+    return method(self, *params)
+  File "/home/rockyj/Workspace/Projects/rafflerv2/.template/generate_dynamic/android_tasks.py", line 789, in package_android
+    _sign_zipf_release(lib_path, jre, zipf_name, signed_zipf_name, **signing_info)
+  File "/home/rockyj/Workspace/Projects/rafflerv2/.template/generate_dynamic/android_tasks.py", line 476, in _sign_zipf_release
+    zipf_name=zipf_name,
+  File "/home/rockyj/Workspace/Projects/rafflerv2/.template/generate_dynamic/android_tasks.py", line 450, in _sign_zipf
+    run_shell(*args)
+  File "/home/rockyj/Workspace/Projects/rafflerv2/.template/generate_dynamic/utils.py", line 340, in run_shell
+    output=state.output.getvalue()
+ShellError: Failed when running java: Keystore file not found.
+
+
+2012-08-12 22:32:17,599 [  ERROR] See /home/rockyj/Workspace/Projects/rafflerv2/forge-error.log for more details
+2012-08-12 22:32:17,599 [  ERROR] Please contact support@trigger.io
+2012-08-12 22:33:15,965 [   INFO] Forge tools running at version 3.3.9
+2012-08-12 22:33:16,087 [  DEBUG] ignoring non-target directory reload
+2012-08-12 22:33:16,087 [  DEBUG] ignoring non-target directory lib
+2012-08-12 22:33:16,087 [  DEBUG] ignoring non-target directory __init__.py
+2012-08-12 22:33:16,088 [  DEBUG] ignoring non-target directory platform_version.txt
+2012-08-12 22:33:16,088 [  DEBUG] ignoring non-target directory config.json
+2012-08-12 22:33:16,088 [  DEBUG] Enabled platforms: ['android']
+2012-08-12 22:33:16,088 [  DEBUG] Forge build tools version: 3.3.9
+2012-08-12 22:33:16,088 [  DEBUG] main: {"server": "https://trigger.io/api/"}
+2012-08-12 22:33:16,088 [  DEBUG] GET https://trigger.io/api/auth/loggedin
+2012-08-12 22:33:19,004 [  DEBUG] Checking API response for success or error
+2012-08-12 22:33:19,004 [  DEBUG] already authenticated via cookie - continuing
+2012-08-12 22:33:19,004 [  DEBUG] POST https://trigger.io/api/track/
+2012-08-12 22:33:19,569 [  DEBUG] Checking API response for success or error
+2012-08-12 22:33:19,569 [  DEBUG] <ForgeTask (android)> running...
+2012-08-12 22:33:19,569 [  DEBUG] <ForgeTask (android)> script:
+[{'do': {'lint_javascript': ()}},
+ {'do': {'check_local_config_schema': ()}},
+ {'do': {'package_android': ()}, 'when': {'platform_is': 'android'}}]
+2012-08-12 22:33:19,569 [   INFO] Checking JavaScript files...
+2012-08-12 22:33:19,573 [  DEBUG] Running: '/home/rockyj/Apps/TriggerToolkit/build-tools/bin/jsl-64' '-conf' '/home/rockyj/Apps/TriggerToolkit/build-tools/jsl.conf' '-process' '/home/rockyj/Workspace/Projects/rafflerv2/src/*.js' '-nologo' '-nofilelisting' '-nosummary'
+2012-08-12 22:33:19,688 [   INFO] JavaScript check complete
+2012-08-12 22:33:19,688 [   INFO] Verifying your configuration settings...
+2012-08-12 22:33:19,688 [   INFO] Configuration settings check complete
+2012-08-12 22:33:19,688 [  DEBUG] Checking to see if java is already in the PATH
+2012-08-12 22:33:19,688 [  DEBUG] Running: 'java' '-version'
+2012-08-12 22:33:19,720 [  DEBUG] Can run java directly from PATH
+2012-08-12 22:33:19,720 [  DEBUG] Using configuration file value u'/home/rockyj/Apps/android-sdk-linux' for android.sdk
+2012-08-12 22:33:19,720 [  DEBUG] Using configuration file value u'rockyj.keystore' for android.profile.keystore
+2012-08-12 22:33:19,720 [  DEBUG] Using configuration file value u'rockyj' for android.profile.keyalias
+2012-08-12 22:33:38,131 [   INFO] Creating Android .apk file
+2012-08-12 22:33:38,132 [   INFO] Creating APK with aapt
+2012-08-12 22:33:38,133 [  DEBUG] Running: '/home/rockyj/Apps/android-sdk-linux/platform-tools/aapt' 'p' '-F' '/tmp/tmpFeYzEI' '-S' 'development/android/res' '-M' 'development/android/AndroidManifest.xml' '-I' '.template/lib/android-platform.apk' '-A' 'development/android/assets' '-0' '' '--rename-manifest-package' 'in.rockyj.raffler' '-f' 'development/android/output'
+2012-08-12 22:33:38,248 [   INFO] Signing APK with your release key
+2012-08-12 22:33:38,248 [  DEBUG] Running: 'java' '-jar' '.template/lib/apk-signer.jar' '--keystore' '/home/rockyj/Workspace/Projects/rafflerv2/rockyj.keystore' '--storepass' 'keystore' '--keyalias' 'rockyj' '--keypass' 'keypass' '--out' '/tmp/tmpmu8kJf' '/tmp/tmpFeYzEI'
+2012-08-12 22:33:38,362 [  DEBUG] Failed to load keystore data, is the store password correct?
+2012-08-12 22:33:38,362 [  ERROR] Something went wrong that we didn't expect:
+2012-08-12 22:33:38,363 [  ERROR] Failed when running java: Failed to load keystore data, is the store password correct?
+
+2012-08-12 22:33:38,363 [  DEBUG] Traceback (most recent call last):
+  File "/home/rockyj/Apps/TriggerToolkit/build-tools/forge/async.py", line 96, in run
+    result = self._target(*self._args, **self._kwargs)
+  File "/home/rockyj/Apps/TriggerToolkit/build-tools/forge/main.py", line 413, in package
+    build_to_run=build_to_run,
+  File "/home/rockyj/Workspace/Projects/rafflerv2/.template/generate_dynamic/customer_goals.py", line 134, in package_app
+    build_to_run.run()
+  File "/home/rockyj/Workspace/Projects/rafflerv2/.template/generate_dynamic/build.py", line 333, in run
+    self._call_with_params(task_method, task_args)
+  File "/home/rockyj/Workspace/Projects/rafflerv2/.template/generate_dynamic/build.py", line 296, in _call_with_params
+    return method(self, *params)
+  File "/home/rockyj/Workspace/Projects/rafflerv2/.template/generate_dynamic/android_tasks.py", line 789, in package_android
+    _sign_zipf_release(lib_path, jre, zipf_name, signed_zipf_name, **signing_info)
+  File "/home/rockyj/Workspace/Projects/rafflerv2/.template/generate_dynamic/android_tasks.py", line 476, in _sign_zipf_release
+    zipf_name=zipf_name,
+  File "/home/rockyj/Workspace/Projects/rafflerv2/.template/generate_dynamic/android_tasks.py", line 450, in _sign_zipf
+    run_shell(*args)
+  File "/home/rockyj/Workspace/Projects/rafflerv2/.template/generate_dynamic/utils.py", line 340, in run_shell
+    output=state.output.getvalue()
+ShellError: Failed when running java: Failed to load keystore data, is the store password correct?
+
+
+2012-08-12 22:33:38,363 [  ERROR] See /home/rockyj/Workspace/Projects/rafflerv2/forge-error.log for more details
+2012-08-12 22:33:38,363 [  ERROR] Please contact support@trigger.io
+2012-08-12 22:34:46,515 [   INFO] Forge tools running at version 3.3.9
+2012-08-12 22:34:46,640 [  DEBUG] ignoring non-target directory reload
+2012-08-12 22:34:46,640 [  DEBUG] ignoring non-target directory lib
+2012-08-12 22:34:46,640 [  DEBUG] ignoring non-target directory __init__.py
+2012-08-12 22:34:46,640 [  DEBUG] ignoring non-target directory platform_version.txt
+2012-08-12 22:34:46,640 [  DEBUG] ignoring non-target directory config.json
+2012-08-12 22:34:46,640 [  DEBUG] Enabled platforms: ['android']
+2012-08-12 22:34:46,641 [  DEBUG] Forge build tools version: 3.3.9
+2012-08-12 22:34:46,641 [  DEBUG] main: {"server": "https://trigger.io/api/"}
+2012-08-12 22:34:46,641 [  DEBUG] GET https://trigger.io/api/auth/loggedin
+2012-08-12 22:34:49,206 [  DEBUG] Checking API response for success or error
+2012-08-12 22:34:49,206 [  DEBUG] already authenticated via cookie - continuing
+2012-08-12 22:34:49,206 [  DEBUG] POST https://trigger.io/api/track/
+2012-08-12 22:34:49,821 [  DEBUG] Checking API response for success or error
+2012-08-12 22:34:49,821 [  DEBUG] <ForgeTask (android)> running...
+2012-08-12 22:34:49,821 [  DEBUG] <ForgeTask (android)> script:
+[{'do': {'lint_javascript': ()}},
+ {'do': {'check_local_config_schema': ()}},
+ {'do': {'package_android': ()}, 'when': {'platform_is': 'android'}}]
+2012-08-12 22:34:49,821 [   INFO] Checking JavaScript files...
+2012-08-12 22:34:49,821 [  DEBUG] Running: '/home/rockyj/Apps/TriggerToolkit/build-tools/bin/jsl-64' '-conf' '/home/rockyj/Apps/TriggerToolkit/build-tools/jsl.conf' '-process' '/home/rockyj/Workspace/Projects/rafflerv2/src/*.js' '-nologo' '-nofilelisting' '-nosummary'
+2012-08-12 22:34:49,885 [   INFO] JavaScript check complete
+2012-08-12 22:34:49,886 [   INFO] Verifying your configuration settings...
+2012-08-12 22:34:49,886 [   INFO] Configuration settings check complete
+2012-08-12 22:34:49,886 [  DEBUG] Checking to see if java is already in the PATH
+2012-08-12 22:34:49,886 [  DEBUG] Running: 'java' '-version'
+2012-08-12 22:34:49,950 [  DEBUG] Can run java directly from PATH
+2012-08-12 22:34:49,950 [  DEBUG] Using configuration file value u'/home/rockyj/Apps/android-sdk-linux' for android.sdk
+2012-08-12 22:34:49,950 [  DEBUG] Using configuration file value u'rockyj.keystore' for android.profile.keystore
+2012-08-12 22:34:49,950 [  DEBUG] Using configuration file value u'rockyj' for android.profile.keyalias
+2012-08-12 22:34:59,541 [   INFO] Creating Android .apk file
+2012-08-12 22:34:59,542 [   INFO] Creating APK with aapt
+2012-08-12 22:34:59,542 [  DEBUG] Running: '/home/rockyj/Apps/android-sdk-linux/platform-tools/aapt' 'p' '-F' '/tmp/tmpJYkqlH' '-S' 'development/android/res' '-M' 'development/android/AndroidManifest.xml' '-I' '.template/lib/android-platform.apk' '-A' 'development/android/assets' '-0' '' '--rename-manifest-package' 'in.rockyj.raffler' '-f' 'development/android/output'
+2012-08-12 22:34:59,656 [   INFO] Signing APK with your release key
+2012-08-12 22:34:59,657 [  DEBUG] Running: 'java' '-jar' '.template/lib/apk-signer.jar' '--keystore' '/home/rockyj/Workspace/Projects/rafflerv2/rockyj.keystore' '--storepass' '#4Secure' '--keyalias' 'rockyj' '--keypass' '#4Secure' '--out' '/tmp/tmpON4HFu' '/tmp/tmpJYkqlH'
+2012-08-12 22:34:59,771 [  DEBUG] Failed to load keystore data, is the store password correct?
+2012-08-12 22:34:59,771 [  ERROR] Something went wrong that we didn't expect:
+2012-08-12 22:34:59,771 [  ERROR] Failed when running java: Failed to load keystore data, is the store password correct?
+
+2012-08-12 22:34:59,771 [  DEBUG] Traceback (most recent call last):
+  File "/home/rockyj/Apps/TriggerToolkit/build-tools/forge/async.py", line 96, in run
+    result = self._target(*self._args, **self._kwargs)
+  File "/home/rockyj/Apps/TriggerToolkit/build-tools/forge/main.py", line 413, in package
+    build_to_run=build_to_run,
+  File "/home/rockyj/Workspace/Projects/rafflerv2/.template/generate_dynamic/customer_goals.py", line 134, in package_app
+    build_to_run.run()
+  File "/home/rockyj/Workspace/Projects/rafflerv2/.template/generate_dynamic/build.py", line 333, in run
+    self._call_with_params(task_method, task_args)
+  File "/home/rockyj/Workspace/Projects/rafflerv2/.template/generate_dynamic/build.py", line 296, in _call_with_params
+    return method(self, *params)
+  File "/home/rockyj/Workspace/Projects/rafflerv2/.template/generate_dynamic/android_tasks.py", line 789, in package_android
+    _sign_zipf_release(lib_path, jre, zipf_name, signed_zipf_name, **signing_info)
+  File "/home/rockyj/Workspace/Projects/rafflerv2/.template/generate_dynamic/android_tasks.py", line 476, in _sign_zipf_release
+    zipf_name=zipf_name,
+  File "/home/rockyj/Workspace/Projects/rafflerv2/.template/generate_dynamic/android_tasks.py", line 450, in _sign_zipf
+    run_shell(*args)
+  File "/home/rockyj/Workspace/Projects/rafflerv2/.template/generate_dynamic/utils.py", line 340, in run_shell
+    output=state.output.getvalue()
+ShellError: Failed when running java: Failed to load keystore data, is the store password correct?
+
+
+2012-08-12 22:34:59,771 [  ERROR] See /home/rockyj/Workspace/Projects/rafflerv2/forge-error.log for more details
+2012-08-12 22:34:59,771 [  ERROR] Please contact support@trigger.io
+2012-08-12 22:37:42,005 [   INFO] Forge tools running at version 3.3.9
+2012-08-12 22:37:42,136 [  DEBUG] ignoring non-target directory reload
+2012-08-12 22:37:42,136 [  DEBUG] ignoring non-target directory lib
+2012-08-12 22:37:42,136 [  DEBUG] ignoring non-target directory __init__.py
+2012-08-12 22:37:42,136 [  DEBUG] ignoring non-target directory platform_version.txt
+2012-08-12 22:37:42,136 [  DEBUG] ignoring non-target directory config.json
+2012-08-12 22:37:42,136 [  DEBUG] Enabled platforms: ['android']
+2012-08-12 22:37:42,136 [  DEBUG] Forge build tools version: 3.3.9
+2012-08-12 22:37:42,136 [  DEBUG] main: {"server": "https://trigger.io/api/"}
+2012-08-12 22:37:42,136 [  DEBUG] GET https://trigger.io/api/auth/loggedin
+2012-08-12 22:37:44,802 [  DEBUG] Checking API response for success or error
+2012-08-12 22:37:44,802 [  DEBUG] already authenticated via cookie - continuing
+2012-08-12 22:37:44,802 [  DEBUG] POST https://trigger.io/api/track/
+2012-08-12 22:37:45,217 [  DEBUG] Checking API response for success or error
+2012-08-12 22:37:45,217 [  DEBUG] <ForgeTask (android)> running...
+2012-08-12 22:37:45,217 [  DEBUG] <ForgeTask (android)> script:
+[{'do': {'lint_javascript': ()}},
+ {'do': {'check_local_config_schema': ()}},
+ {'do': {'package_android': ()}, 'when': {'platform_is': 'android'}}]
+2012-08-12 22:37:45,218 [   INFO] Checking JavaScript files...
+2012-08-12 22:37:45,218 [  DEBUG] Running: '/home/rockyj/Apps/TriggerToolkit/build-tools/bin/jsl-64' '-conf' '/home/rockyj/Apps/TriggerToolkit/build-tools/jsl.conf' '-process' '/home/rockyj/Workspace/Projects/rafflerv2/src/*.js' '-nologo' '-nofilelisting' '-nosummary'
+2012-08-12 22:37:45,332 [   INFO] JavaScript check complete
+2012-08-12 22:37:45,332 [   INFO] Verifying your configuration settings...
+2012-08-12 22:37:45,332 [   INFO] Configuration settings check complete
+2012-08-12 22:37:45,333 [  DEBUG] Checking to see if java is already in the PATH
+2012-08-12 22:37:45,333 [  DEBUG] Running: 'java' '-version'
+2012-08-12 22:37:45,364 [  DEBUG] Can run java directly from PATH
+2012-08-12 22:37:45,364 [  DEBUG] Using configuration file value u'/home/rockyj/Apps/android-sdk-linux' for android.sdk
+2012-08-12 22:37:45,365 [  DEBUG] Using configuration file value u'rockyj.keystore' for android.profile.keystore
+2012-08-12 22:37:45,365 [  DEBUG] Using configuration file value u'rockyj' for android.profile.keyalias
+2012-08-12 22:37:53,626 [   INFO] Creating Android .apk file
+2012-08-12 22:37:53,627 [   INFO] Creating APK with aapt
+2012-08-12 22:37:53,627 [  DEBUG] Running: '/home/rockyj/Apps/android-sdk-linux/platform-tools/aapt' 'p' '-F' '/tmp/tmp4jQKAj' '-S' 'development/android/res' '-M' 'development/android/AndroidManifest.xml' '-I' '.template/lib/android-platform.apk' '-A' 'development/android/assets' '-0' '' '--rename-manifest-package' 'in.rockyj.raffler' '-f' 'development/android/output'
+2012-08-12 22:37:53,741 [   INFO] Signing APK with your release key
+2012-08-12 22:37:53,741 [  DEBUG] Running: 'java' '-jar' '.template/lib/apk-signer.jar' '--keystore' '/home/rockyj/Workspace/Projects/rafflerv2/rockyj.keystore' '--storepass' '#4Secure' '--keyalias' 'rockyj' '--keypass' '#4Secure' '--out' '/tmp/tmpqjZchS' '/tmp/tmp4jQKAj'
+2012-08-12 22:37:53,805 [  DEBUG] Failed to load key, does the key exist?
+2012-08-12 22:37:53,808 [  ERROR] Something went wrong that we didn't expect:
+2012-08-12 22:37:53,809 [  ERROR] Failed when running java: Failed to load key, does the key exist?
+
+2012-08-12 22:37:53,809 [  DEBUG] Traceback (most recent call last):
+  File "/home/rockyj/Apps/TriggerToolkit/build-tools/forge/async.py", line 96, in run
+    result = self._target(*self._args, **self._kwargs)
+  File "/home/rockyj/Apps/TriggerToolkit/build-tools/forge/main.py", line 413, in package
+    build_to_run=build_to_run,
+  File "/home/rockyj/Workspace/Projects/rafflerv2/.template/generate_dynamic/customer_goals.py", line 134, in package_app
+    build_to_run.run()
+  File "/home/rockyj/Workspace/Projects/rafflerv2/.template/generate_dynamic/build.py", line 333, in run
+    self._call_with_params(task_method, task_args)
+  File "/home/rockyj/Workspace/Projects/rafflerv2/.template/generate_dynamic/build.py", line 296, in _call_with_params
+    return method(self, *params)
+  File "/home/rockyj/Workspace/Projects/rafflerv2/.template/generate_dynamic/android_tasks.py", line 789, in package_android
+    _sign_zipf_release(lib_path, jre, zipf_name, signed_zipf_name, **signing_info)
+  File "/home/rockyj/Workspace/Projects/rafflerv2/.template/generate_dynamic/android_tasks.py", line 476, in _sign_zipf_release
+    zipf_name=zipf_name,
+  File "/home/rockyj/Workspace/Projects/rafflerv2/.template/generate_dynamic/android_tasks.py", line 450, in _sign_zipf
+    run_shell(*args)
+  File "/home/rockyj/Workspace/Projects/rafflerv2/.template/generate_dynamic/utils.py", line 340, in run_shell
+    output=state.output.getvalue()
+ShellError: Failed when running java: Failed to load key, does the key exist?
+
+
+2012-08-12 22:37:53,809 [  ERROR] See /home/rockyj/Workspace/Projects/rafflerv2/forge-error.log for more details
+2012-08-12 22:37:53,809 [  ERROR] Please contact support@trigger.io
+2012-08-12 22:39:23,636 [   INFO] Forge tools running at version 3.3.9
+2012-08-12 22:39:23,769 [  DEBUG] ignoring non-target directory reload
+2012-08-12 22:39:23,769 [  DEBUG] ignoring non-target directory lib
+2012-08-12 22:39:23,769 [  DEBUG] ignoring non-target directory __init__.py
+2012-08-12 22:39:23,769 [  DEBUG] ignoring non-target directory platform_version.txt
+2012-08-12 22:39:23,769 [  DEBUG] ignoring non-target directory config.json
+2012-08-12 22:39:23,769 [  DEBUG] Enabled platforms: ['android']
+2012-08-12 22:39:23,770 [  DEBUG] Forge build tools version: 3.3.9
+2012-08-12 22:39:23,770 [  DEBUG] main: {"server": "https://trigger.io/api/"}
+2012-08-12 22:39:23,770 [  DEBUG] GET https://trigger.io/api/auth/loggedin
+2012-08-12 22:39:26,385 [  DEBUG] Checking API response for success or error
+2012-08-12 22:39:26,385 [  DEBUG] already authenticated via cookie - continuing
+2012-08-12 22:39:26,385 [  DEBUG] POST https://trigger.io/api/track/
+2012-08-12 22:39:26,850 [  DEBUG] Checking API response for success or error
+2012-08-12 22:39:26,850 [  DEBUG] <ForgeTask (android)> running...
+2012-08-12 22:39:26,850 [  DEBUG] <ForgeTask (android)> script:
+[{'do': {'lint_javascript': ()}},
+ {'do': {'check_local_config_schema': ()}},
+ {'do': {'package_android': ()}, 'when': {'platform_is': 'android'}}]
+2012-08-12 22:39:26,850 [   INFO] Checking JavaScript files...
+2012-08-12 22:39:26,850 [  DEBUG] Running: '/home/rockyj/Apps/TriggerToolkit/build-tools/bin/jsl-64' '-conf' '/home/rockyj/Apps/TriggerToolkit/build-tools/jsl.conf' '-process' '/home/rockyj/Workspace/Projects/rafflerv2/src/*.js' '-nologo' '-nofilelisting' '-nosummary'
+2012-08-12 22:39:26,914 [   INFO] JavaScript check complete
+2012-08-12 22:39:26,914 [   INFO] Verifying your configuration settings...
+2012-08-12 22:39:26,915 [   INFO] Configuration settings check complete
+2012-08-12 22:39:26,915 [  DEBUG] Checking to see if java is already in the PATH
+2012-08-12 22:39:26,915 [  DEBUG] Running: 'java' '-version'
+2012-08-12 22:39:26,979 [  DEBUG] Can run java directly from PATH
+2012-08-12 22:39:26,979 [  DEBUG] Using configuration file value u'/home/rockyj/Apps/android-sdk-linux' for android.sdk
+2012-08-12 22:39:26,979 [  DEBUG] Using configuration file value u'rockyj.keystore' for android.profile.keystore
+2012-08-12 22:39:26,979 [  DEBUG] Using configuration file value u'rockyj' for android.profile.keyalias
+2012-08-12 22:39:35,296 [   INFO] Creating Android .apk file
+2012-08-12 22:39:35,296 [   INFO] Creating APK with aapt
+2012-08-12 22:39:35,296 [  DEBUG] Running: '/home/rockyj/Apps/android-sdk-linux/platform-tools/aapt' 'p' '-F' '/tmp/tmpk7ixD_' '-S' 'development/android/res' '-M' 'development/android/AndroidManifest.xml' '-I' '.template/lib/android-platform.apk' '-A' 'development/android/assets' '-0' '' '--rename-manifest-package' 'in.rockyj.raffler' '-f' 'development/android/output'
+2012-08-12 22:39:35,410 [   INFO] Signing APK with your release key
+2012-08-12 22:39:35,410 [  DEBUG] Running: 'java' '-jar' '.template/lib/apk-signer.jar' '--keystore' '/home/rockyj/Workspace/Projects/rafflerv2/rockyj.keystore' '--storepass' '#4Secure' '--keyalias' 'rockyj' '--keypass' '#4Secure' '--out' '/tmp/tmpj4IqZW' '/tmp/tmpk7ixD_'
+2012-08-12 22:39:35,474 [  DEBUG] Failed to load key, does the key exist?
+2012-08-12 22:39:35,474 [  ERROR] Something went wrong that we didn't expect:
+2012-08-12 22:39:35,474 [  ERROR] Failed when running java: Failed to load key, does the key exist?
+
+2012-08-12 22:39:35,474 [  DEBUG] Traceback (most recent call last):
+  File "/home/rockyj/Apps/TriggerToolkit/build-tools/forge/async.py", line 96, in run
+    result = self._target(*self._args, **self._kwargs)
+  File "/home/rockyj/Apps/TriggerToolkit/build-tools/forge/main.py", line 413, in package
+    build_to_run=build_to_run,
+  File "/home/rockyj/Workspace/Projects/rafflerv2/.template/generate_dynamic/customer_goals.py", line 134, in package_app
+    build_to_run.run()
+  File "/home/rockyj/Workspace/Projects/rafflerv2/.template/generate_dynamic/build.py", line 333, in run
+    self._call_with_params(task_method, task_args)
+  File "/home/rockyj/Workspace/Projects/rafflerv2/.template/generate_dynamic/build.py", line 296, in _call_with_params
+    return method(self, *params)
+  File "/home/rockyj/Workspace/Projects/rafflerv2/.template/generate_dynamic/android_tasks.py", line 789, in package_android
+    _sign_zipf_release(lib_path, jre, zipf_name, signed_zipf_name, **signing_info)
+  File "/home/rockyj/Workspace/Projects/rafflerv2/.template/generate_dynamic/android_tasks.py", line 476, in _sign_zipf_release
+    zipf_name=zipf_name,
+  File "/home/rockyj/Workspace/Projects/rafflerv2/.template/generate_dynamic/android_tasks.py", line 450, in _sign_zipf
+    run_shell(*args)
+  File "/home/rockyj/Workspace/Projects/rafflerv2/.template/generate_dynamic/utils.py", line 340, in run_shell
+    output=state.output.getvalue()
+ShellError: Failed when running java: Failed to load key, does the key exist?
+
+
+2012-08-12 22:39:35,474 [  ERROR] See /home/rockyj/Workspace/Projects/rafflerv2/forge-error.log for more details
+2012-08-12 22:39:35,474 [  ERROR] Please contact support@trigger.io
